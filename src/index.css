@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  
+}
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace !important;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
