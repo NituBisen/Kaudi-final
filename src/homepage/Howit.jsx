@@ -451,8 +451,179 @@ export default function HowItWorks() {
         }
 
         /* ======================================================
-           REDUCED MOTION
+           MOBILE / TABLET — CENTER ALL CONTENT
         ====================================================== */
+
+        @media (max-width: 1023px) {
+
+          .hiw-section > div {
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+          }
+
+          .hiw-section > div > .grid {
+            justify-items: center;
+          }
+
+          .hiw-steps,
+          .hiw-section > div > .grid > div {
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .hiw-section > div > .grid > div:last-child {
+            align-items: center;
+            text-align: center;
+          }
+
+          .hiw-label,
+          .hiw-heading,
+          .hiw-description,
+          .hiw-stats,
+          .hiw-image-wrap {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .hiw-label,
+          .hiw-heading,
+          .hiw-description {
+            text-align: center;
+          }
+
+          .hiw-description {
+            width: 100%;
+            max-width: 500px;
+          }
+
+          .hiw-stats {
+            width: 100%;
+            max-width: 500px;
+          }
+
+          .hiw-image-wrap {
+            width: 100%;
+            max-width: 700px;
+          }
+
+          .hiw-step {
+            justify-content: center;
+            text-align: center;
+          }
+
+          .hiw-step-body {
+            align-items: center;
+            text-align: center;
+          }
+
+          .hiw-step-arrow {
+            margin-left: 0;
+          }
+        }
+
+        @media (max-width: 767px) {
+
+          .hiw-section > div {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
+          .hiw-heading {
+            width: 100%;
+            font-size: clamp(36px, 11vw, 58px);
+          }
+
+          .hiw-description {
+            font-size: 13px;
+            line-height: 1.6;
+          }
+
+          .hiw-stats {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+          }
+
+          .hiw-stat-card {
+            width: 100%;
+            min-width: 0;
+            padding: 8px 4px;
+          }
+
+          .hiw-stat-value {
+            font-size: 22px;
+          }
+
+          .hiw-stat-label {
+            font-size: 8px;
+            letter-spacing: 1.4px;
+          }
+
+          .hiw-step {
+            width: 100%;
+            padding: 20px 12px;
+            gap: 12px;
+          }
+
+          .hiw-step-number {
+            font-size: 20px;
+          }
+
+          .hiw-step-title {
+            font-size: 14px;
+          }
+
+          .hiw-step-description {
+            font-size: 12px;
+          }
+
+          .hiw-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+          }
+        }
+
+        @media (max-width: 480px) {
+
+          .hiw-section > div {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+
+          .hiw-heading {
+            font-size: clamp(34px, 12vw, 48px);
+          }
+
+          .hiw-stats {
+            gap: 6px;
+          }
+
+          .hiw-stat-card {
+            height: 76px;
+          }
+
+          .hiw-stat-value {
+            font-size: 20px;
+          }
+
+          .hiw-stat-label {
+            font-size: 7.5px;
+            letter-spacing: 1px;
+          }
+
+          .hiw-step {
+            padding: 18px 8px;
+          }
+        }
+
+        /* ======================================================
+           REDUCED MOTION
+        ======================================================
 
         @media (prefers-reduced-motion: reduce) {
           .hiw-step,

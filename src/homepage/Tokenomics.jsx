@@ -1240,6 +1240,220 @@ export default function Tokenomics() {
 
 
         /* ======================================================
+           CENTER ALL CONTENT BELOW 750px
+        ====================================================== */
+
+        @media (max-width: 750px) {
+
+          .tokenomics-section > div {
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+          }
+
+          .tokenomics-section > div > .grid {
+            justify-items: center;
+            text-align: center;
+          }
+
+          .tokenomics-section > div > .grid > div {
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+          }
+
+          .tok-label,
+          .tok-heading,
+          .tok-description,
+          .tok-image-wrap,
+          .tok-right-content,
+          .tok-card,
+          .tok-portfolio-block,
+          .tok-portfolio-heading,
+          .tok-portfolio-card {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .tok-label,
+          .tok-heading,
+          .tok-description,
+          .tok-portfolio-heading {
+            text-align: center;
+          }
+
+          .tok-description {
+            width: 100%;
+            max-width: 560px;
+          }
+
+          .tok-image-wrap {
+            width: 100%;
+            max-width: 528px;
+          }
+
+          .tok-image {
+            width: 100%;
+            max-width: 528px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .tok-right-content {
+            width: 100%;
+            align-items: center;
+            padding-top: 0;
+          }
+
+          .tok-card {
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+          }
+
+          .tok-portfolio-block {
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+          }
+
+          .tok-portfolio-card {
+            width: 100%;
+            max-width: 700px;
+            text-align: left;
+          }
+
+        }
+
+        @media (max-width: 639px) {
+
+          .tokenomics-section > div {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+
+          .tok-heading {
+            width: 100%;
+          }
+
+          .tok-description {
+            font-size: 14px;
+            line-height: 1.65;
+          }
+
+          .tok-card {
+            max-width: 500px;
+            padding: 28px 20px;
+          }
+
+          .tok-portfolio-grid {
+            justify-items: center;
+          }
+
+          .tok-portfolio-item {
+            width: 100%;
+            max-width: 500px;
+          }
+
+        }
+
+
+        /* ======================================================
+           CENTER ALL CONTENT BELOW 1024px
+        ====================================================== */
+
+        @media (max-width: 1023px) {
+
+          .tokenomics-section > div {
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+          }
+
+          .tokenomics-section > div > .grid {
+            justify-items: center;
+          }
+
+          .tokenomics-section > div > .grid > div {
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            text-align: center;
+          }
+
+          .tok-label,
+          .tok-heading,
+          .tok-image-wrap,
+          .tok-description,
+          .tok-card,
+          .tok-portfolio-block,
+          .tok-portfolio-heading,
+          .tok-portfolio-card {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .tok-label,
+          .tok-heading,
+          .tok-description,
+          .tok-portfolio-heading {
+            text-align: center;
+          }
+
+          .tok-description {
+            width: 100%;
+            max-width: 560px;
+          }
+
+          .tok-image-wrap {
+            width: 100%;
+            max-width: 560px;
+          }
+
+          .tok-image {
+            width: 100%;
+            max-width: 528px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .tok-right-content {
+            padding-top: 0;
+            align-items: center;
+          }
+
+          .tok-card {
+            width: 100%;
+            max-width: 490px;
+            text-align: left;
+          }
+
+          .tok-portfolio-block {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+          }
+
+          .tok-portfolio-card {
+            width: 100%;
+            max-width: 100%;
+            text-align: left;
+          }
+        }
+
+        /* ======================================================
            REDUCED MOTION
         ====================================================== */
 

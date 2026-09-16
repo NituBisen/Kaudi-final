@@ -403,8 +403,8 @@ export default function FAQ() {
 
           position: relative;
 
-          width: 360px;
-          max-width: 100%;
+          width: 100%;
+          max-width: 360px;
 
           border-radius: 6px;
 
@@ -871,6 +871,74 @@ export default function FAQ() {
             font-size: 15.5px;
           }
 
+        }
+
+
+        /* ======================================================
+           DISCLAIMER RESPONSIVE SIZING
+        ====================================================== */
+
+        @media (max-width: 767px) {
+
+          .faq-disclaimer {
+            width: 100%;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+          }
+
+          .faq-disclaimer-inner {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 14px 16px;
+          }
+
+          .faq-disclaimer-body {
+            width: 100%;
+            max-width: 100%;
+            overflow-wrap: break-word;
+            word-break: normal;
+          }
+        }
+
+        @media (max-width: 480px) {
+
+          .faq-disclaimer {
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .faq-disclaimer-inner {
+            padding: 13px 14px;
+          }
+
+          .faq-disclaimer-title {
+            font-size: 9px;
+            letter-spacing: 2px;
+          }
+
+          .faq-disclaimer-body {
+            font-size: 11px;
+            line-height: 1.55;
+          }
+        }
+
+        @media (max-width: 360px) {
+
+          .faq-disclaimer {
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .faq-disclaimer-inner {
+            padding: 12px 12px;
+          }
+
+          .faq-disclaimer-body {
+            font-size: 10.5px;
+            line-height: 1.5;
+          }
         }
 
 
